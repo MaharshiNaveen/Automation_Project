@@ -15,7 +15,7 @@ touch /etc/cron.d/automation
 echo "SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin
 #cron job to perform automation script
-* * * * *  root /root/Automation_Project/automation.sh
+0 16 * * *  root /root/Automation_Project/automation.sh
 " >> /etc/cron.d/automation
 crontab /etc/cron.d/automation
 fi
